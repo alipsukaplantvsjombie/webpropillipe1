@@ -1,0 +1,221 @@
+/* UTAMA */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+
+    margin: 0;
+    padding: 0;
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #808080;
+}
+/* UTAMA */
+
+
+/* KEPALA WEB */
+header.kepala {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: black;
+    color: white;
+    
+    position: sticky;
+    top: 0;
+}
+
+
+.title {
+    padding-inline: 20px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    padding-inline: 15px;
+}
+
+nav ul li a {
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    color: white;
+    border-radius: 99px;
+    font-size: 1.05rem;
+    font-weight: 500;
+
+    transition: all 0.2s ease-in-out;
+}
+
+nav ul li:hover a {
+    color: black;
+    background-color: white;
+}
+
+/* KEPALA WEB */
+
+/* ISI WEB */
+main {
+    padding: 20px;
+    
+    gap: 1.5rem;
+    display: flex;
+}
+
+main #content article .gambar-chapter-1 img {
+    width: 500px;
+    height: 500px;
+}
+
+main #content article .gambar-chapter-1 {
+    display: flex;
+    justify-content: center;
+}
+
+#content {
+    display: flex;
+    flex-flow: column nowrap;
+
+    gap: 1rem 2rem;
+
+    flex: 5;
+}
+
+main #content .card p {
+    text-indent: 2rem;
+    text-align: justify;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 1px;
+
+    padding: 15px;
+    background-color: white;
+}
+
+aside{
+    flex: 1;
+}
+
+aside .card {
+    text-align: center;
+}
+
+aside .card p {
+    margin-top: 5px;
+}
+
+figure .gambar-alip {
+    display: flex;
+    justify-content: center;
+}
+
+aside table{
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* ISI WEB */
+
+/* TOMBOL NEXT */
+.beranda-next a {
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1.05rem;
+    font-weight: 500;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: white
+}
+
+.beranda-next {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+}
+
+.beranda-next a:hover {
+    background: black;
+    color: white;
+    border: 1px solid black;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+}
+/* TOMBOL NEXT */
+
+/* AKHIR/KEPALA WEB */
+figure .gambar-alip img {
+    width: 250px;
+    height: 250px;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-weight: bold;
+}
+/* AKHIR/KEPALA WEB */
+
+/* MEDIA QUERY */
+@media screen and (max-width: 1200px) {
+    main {
+        flex-direction: column;
+    }
+    main #content article .gambar-chapter-1 img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+    header.kepala {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 15px;
+    }
+    .title {
+        order: -1;
+        margin-bottom: 5px;
+    }
+    nav ul {
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    nav ul li {
+        padding-inline: 0;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    main {
+        padding: 10px;
+    }
+    .card {
+        padding: 15px 10px;
+    }
+    figure .gambar-alip img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+    aside {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+    .beranda-next a {
+        padding: 10px 25px;
+        font-size: 1rem;
+    }
+}
+/* MEDIA QUERY */
